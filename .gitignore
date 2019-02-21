@@ -1,2 +1,4 @@
 docker-compose-test.yml
-data/certbot
+data/certbot/conf/accounts/
+data/certbot/conf/csr/
+data/certbot/conf/keys/
