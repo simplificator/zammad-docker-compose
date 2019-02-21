@@ -37,6 +37,13 @@ See `.examples/proxy/docker-compose.yml` for an example proxy project.
 Like this, you can add your `docker-compose.prod.yml` to a branch of your Git repository and stay up to date by merging changes to your branch.
 
 
+## Using Letsencrypt SSL certificates
+
+Configuration for automated configuration of letsencrypt SSL certificates is in [docker-compose.prod.yml](./docker-compose.prod.yml).
+
+The respective initial setup has to be done by executing the interactive script [init-letsencrypt.sh](./init-letsencrypt.sh) on production. Make shure the variables at the beginning of the script are set correctly.
+
+
 ## Using Rancher
 
 * RANCHER_URL=http://RANCHER_HOST:8080 rancher-compose --env-file=.env up
